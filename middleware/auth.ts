@@ -18,7 +18,7 @@ const auth = async (
     return res.status(401).send({ error: 'No Authorization header present' });
   }
 
-  const [_bearer, token] = headerValue.split(' ');
+  const [_bearer, token ] = headerValue.split(' ');
 
   if (!token) {
     return res.status(401).send({ error: 'No token present' });

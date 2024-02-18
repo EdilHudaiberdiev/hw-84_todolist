@@ -41,19 +41,19 @@ const run = async () => {
 
   await Task.create(
     {
-      user: user1,
+      user: user1._id,
       title: "Simple task for user1",
       description: 'any description, any description, any description',
       status: 'new',
     },
     {
-      user: user1,
+      user: user1._id,
       title: "Extra task for user1",
       description: 'any description, any description, any description',
       status: 'in_progress',
     },
     {
-      user: user2,
+      user: user2._id,
       title: "Simple task for user2",
       description: 'any description, any description, any description',
       status: 'new',
